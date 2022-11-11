@@ -1,0 +1,20 @@
+@import "./Variables.scss";
+@import "~bootstrap/scss/bootstrap";
+
+.row {
+  margin: 0;
+}
+.justifyContent {
+  justify-content: center!important;
+}
+.borderBottomLight {
+  border-bottom: 1px solid $lightGray!important;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  > * {
+    width: unset;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../Variables.scss';
+
+.launchTable {
+    border: 1px solid $lightGray;
+    border-radius: 4px;
+    height: fit-content;
+    font-size: 12px;
+    .launchTableHeader {
+        justify-content: space-between;
+        background-color: $lightGray;
+        padding: 4px 8px;
+        height: fit-content;
+    }
+    .notFound {
+        justify-content: center;
+    }
+    .launchRecords {
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+        height: 65vh;
+        overflow-y: auto;
+        .launchRecord {
+            cursor: pointer;
+            align-items: center;
+            &:hover {
+                background-color: $lightGray;
+            }
+        }
+        &::-webkit-scrollbar {
+            width: 2px;               /* width of the entire scrollbar */
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;        /* color of the tracking area */
+            width: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $lightGray;    /* color of the scroll thumb */
+            border-radius: 4px;       /* roundness of the scroll thumb */
+        }
+    }
+}
