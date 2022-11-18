@@ -8,7 +8,7 @@ interface NavbarProps {
 }
  
 const Header: FunctionComponent<NavbarProps> = () => {
-    return <Navbar bg="light" variant="light" className='borderBottomLight p-0'>
+    return <Navbar variant="light" className='borderBottomLight p-0'>
     <Container className="justifyContent">
       <a href="/">
         <Image width={'200px'} src='../spaceXLogo.png' alt='SpaceX'/>

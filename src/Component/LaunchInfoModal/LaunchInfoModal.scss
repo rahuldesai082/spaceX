@@ -1,0 +1,67 @@
+@import '../../Variables.scss';
+.launchDetailsModal {
+    .modal-content {
+        min-height: 30vh;
+        .loader {
+            position: absolute;
+            top: calc(50% - 12px);
+            left: calc(50% - 12px);
+        }
+        .modal-body {
+            padding: 24px;
+            .launchBadge {
+                width: 70px;
+                height: fit-content;
+                padding: 0;
+            }
+            .launchTitle {
+                display: flex;
+                gap: 12px;
+                font-weight: 600;
+                .launchStatus {
+                    padding: 0 0.5rem;
+                    font-size: 12px;
+                    margin: 0;
+                }
+            }
+            .launchDetails {
+                padding: 0;
+                border-bottom: 1px solid $light;
+                padding: 0.5rem 0;
+                * {
+                 padding: 0;
+                }
+            }
+            .rocketName {
+                margin-top: 8px;
+                font-size:12px
+            }
+            .launchRefLinks{
+                display: flex;
+                gap: 8px;
+                margin-top: 8px;
+                .nasaLogo {
+                    width: 16px;
+                }
+                * {
+                    cursor: pointer;
+                }
+            
+            }
+            .btn-close {
+                position: absolute;
+                right: 0;
+                font-size: 12px;
+                right: 24px;
+                top: 24px;
+                padding: 0;
+                &:hover{
+                    background-color: transparent;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

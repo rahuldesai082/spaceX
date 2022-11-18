@@ -1,6 +1,14 @@
 @import "./Variables.scss";
 @import "~bootstrap/scss/bootstrap";
 
+.loader {
+  -webkit-animation:spin 1s linear infinite;
+  -moz-animation:spin 1s linear infinite;
+  animation:spin 1s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 .row {
   margin: 0;
 }
@@ -8,7 +16,7 @@
   justify-content: center!important;
 }
 .borderBottomLight {
-  border-bottom: 1px solid $lightGray!important;
+  border-bottom: 1px solid $light!important;
 }
 .filters {
   display: flex;

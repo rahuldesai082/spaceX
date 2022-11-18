@@ -6,20 +6,24 @@
         align-items: center;
         gap:8px;
         padding: 0;
+        font-weight: 600;
     }
     .dropdownOptions {
+        padding: 8px 0;
         position: absolute;
         top: 100%;
         right: 0;
         width: fit-content;
-        border: 1px solid $lightGray;
+        border: 1px solid $light;
         border-radius: 4px;
         max-height: 150px;
         overflow-y: auto;
+        z-index: 9;
+        background-color: white;
         .dropdownOption {
-            padding: 0 8px;
+            padding: 2px 8px;
             &:hover {
-                background: $lightGray;
+                background: $light;
             }
         }
         &::-webkit-scrollbar {
@@ -30,7 +34,7 @@
             width: 4px;
         }
         &::-webkit-scrollbar-thumb {
-            background-color: $lightGray;    /* color of the scroll thumb */
+            background-color: $light;    /* color of the scroll thumb */
             border-radius: 4px;       /* roundness of the scroll thumb */
         }
     }
