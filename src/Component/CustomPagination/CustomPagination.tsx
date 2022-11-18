@@ -1,6 +1,8 @@
 import React, { FunctionComponent, useCallback, useEffect, useState } from 'react';
 import Pagination from 'react-bootstrap/esm/Pagination';
 import { paginationAction } from '../../Utils/Interface';
+
+import './CustomPagination.scss';
 interface CustomPaginationProps {
     customClass?: string;
     current_page: number,
@@ -86,7 +88,7 @@ const CustomPagination: FunctionComponent<CustomPaginationProps> = ({ current_pa
         handlePageClick(curr);
     }
     
-    return <Pagination className={`${customClass ? customClass : ''}`}>
+    return <Pagination className={`customPagination ${customClass ? customClass : ''}`}>
         {
             currentPage > 1 && <Pagination.Prev onClick={()=>onClick(currentPage-1, paginationAction.PREV)}/>
         }

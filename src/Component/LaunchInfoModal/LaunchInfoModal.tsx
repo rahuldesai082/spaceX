@@ -38,9 +38,15 @@ const LaunchInfoModal: FunctionComponent<LaunchInfoModalProps> = ({showModal, la
                                 {launchDetails?.rocket_name}
                             </Row>
                             <div className="launchRefLinks">
-                                <img src='./nasa.png' alt='nasa logo' className='nasaLogo'/>
-                                <ImWikipedia/>
-                                <SlSocialYoutube/>
+                                <a target="_blank" href={launchDetails?.article_link} rel="noreferrer" >
+                                    <img src='./nasa.png' alt='nasa logo' className='nasaLogo'/>
+                                </a>
+                                <a target="_blank" href={launchDetails?.wikipedia} rel="noreferrer" >
+                                    <ImWikipedia/>
+                                </a>
+                                <a target="_blank" href={launchDetails?.video_link} rel="noreferrer" >
+                                    <SlSocialYoutube/>
+                                </a>
                             </div>
                         </Col> 
                     </Row>

@@ -1,0 +1,13 @@
+.customPagination{
+    .page-item {
+        .page-link {
+            color: black;
+        }
+        &.active {
+            .page-link {
+                background: none;
+                border: 1px solid black;
+            }
+        }
+    }
+}
